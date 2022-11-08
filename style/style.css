@@ -1,0 +1,60 @@
+:root {
+	--dark: #292C35;
+	--light: #F1F1F1;
+	--label: #111;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--light);
+    transition: .5s ease;
+}
+
+#toggle{
+    width: 235.38px;
+    height: 102px;
+    background-color: #111;
+    margin: auto;
+    border-radius: 59px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+img {
+    width: 94.15px;
+    position:relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+#sun{
+    float: right;
+    right: 5px;
+}
+
+#moon {
+    float: left;
+    left: 5px;
+}
+
+#ball {
+    width: 86.31px;
+    height: 86.31px;
+    background-color: #fff;
+    border-radius: 50px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+body.active{
+    background-color: var(--dark);
+}
+
+body.active #ball{
+    transform: translate(calc(235.38px - 106.31px), -50%);
+}
